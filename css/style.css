@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+/*-----------------Общие свойства-------------------*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: #162831;
+}
+
+._container {
+  padding: 0 310px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+._imgbg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+._imgbg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title {
+  font-family: "Abril Fatface", cursive;
+  font-size: 42px;
+  color: white;
+  position: relative;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: -73px;
+  width: 28px;
+  background-color: #018ABE;
+  height: 14px;
+  border-radius: 0px 50px;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: -73px;
+  width: 28px;
+  background-color: #018ABE;
+  height: 14px;
+  border-radius: 50px 0px;
+}
+.title__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*-----------------HEADER-----------------*/
+.header__row {
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__button {
+  color: white;
+  padding: 9px 15px;
+  background-color: #018ABE;
+  border-radius: 3px;
+}
+
+.menu {
+  width: 50.3846%;
+}
+.menu__row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu__item a {
+  color: white;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.menu__item a::after {
+  content: "";
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  top: 17px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+}
+.menu__item a:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+/*---------------info-title------------------*/
+.info-title {
+  width: 100%;
+  height: 100%;
+  font-family: "Abril Fatface", cursive;
+}
+.info-title__body {
+  position: relative;
+  max-height: 600px;
+  padding: 136px 0 210px 0;
+}
+.info-title__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.info-title__subtitle {
+  margin-bottom: 40px;
+}
+.info-title__text {
+  font-size: 24px;
+}
+.info-title__text::before {
+  background-color: white;
+  top: 9px;
+}
+.info-title__text::after {
+  background-color: white;
+  top: 9px;
+}
+.info-title__title {
+  position: relative;
+  z-index: 2;
+  font-size: 64px;
+  text-align: center;
+  color: white;
+}
+
+/*------------------------------*/
