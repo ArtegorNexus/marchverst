@@ -93,6 +93,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
+  z-index: 0;
 }
 ._imgbg img {
   position: absolute;
@@ -102,6 +103,7 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
 
 .title {
@@ -233,4 +235,135 @@ body {
   color: white;
 }
 
-/*------------------------------*/
+/*--------------SESSIONS----------------*/
+.sessions__container {
+  margin-top: 150px;
+}
+.sessions__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px -12px 0 -12px;
+}
+.sessions__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.3333%;
+          flex: 0 1 33.3333%;
+  border: 12px solid transparent;
+  height: 540px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+}
+.sessions__cube {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 66.6667%;
+          flex: 0 1 66.6667%;
+}
+.sessions__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 270px;
+}
+.sessions__miniblock {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  border: 12px solid transparent;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sessions-block {
+  font-family: "Abril Fatface", cursive;
+  color: white;
+  font-size: 24px;
+  padding: 40px;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.sessions-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 138, 190, 0.5);
+  z-index: 1;
+  border-radius: 10px;
+}
+.sessions-block a {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+.sessions-block::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 7px;
+  background-color: #018ABE;
+  width: 0%;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.sessions-block:hover {
+  padding-bottom: 50px;
+}
+.sessions-block:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+/*------------ОТЗЫВЫ---------------*/
+.reviews__container {
+  max-width: 1740px;
+  padding: 0 90px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+.reviews__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -100px;
+}
+.block-reviews {
+  background: #018ABE;
+  border-radius: 10px;
+  padding: 50px;
+  min-height: 350px;
+  max-width: 636px;
+}
+.block-reviews__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+.block-reviews__text {
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+}
+.block-reviews__text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.block-reviews__unactive {
+  -webkit-transform: scale(0.7861);
+          transform: scale(0.7861);
+  opacity: 0.4;
+}
